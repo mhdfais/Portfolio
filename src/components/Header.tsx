@@ -55,12 +55,13 @@ const Header: React.FC = () => {
                 Highlights
               </h2>
               <div className="flex flex-wrap justify-center gap-4">
-                <button
-                  onClick={() => window.open("/cv.pdf", "_blank")}
-                  className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400"
-                >
-                  Download CV
-                </button>
+                <a
+  href="/Mohammed_Fais_Resume.pdf"
+  download
+  className="inline-block px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400"
+>
+  Download CV
+</a>
                 <button
                   onClick={() =>
                     document

@@ -4,8 +4,9 @@ export interface Project {
   description: string;
   technologies: string[];
   githubUrl?: string;
+  githubUrls?: { label: string; url: string }[];
   liveUrl?: string;
-  image?: string;
+  isMini?: boolean; 
 }
 
 export interface Skill {
